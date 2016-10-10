@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The First Amendment - Speak UP</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="./app.css" rel='stylesheet' type='text/css'>
+    <script src="./app.js"></script>
+</head>
+<body>
+    <h1>The First Amendment</h1>
+
+    <br>
+    <h1>Enter hashes</h1>
+    <br><label for="urlHash">URL Hash:</label><input type="text" id="urlHash" maxlength="20" minlength="20"></input>
+    <br><label for="commentHash">Comment Hash:</label><input type="text" id="commentHash" maxlength="20" minlength="20"></input>
+    <br><br><button id="send" onclick="uploadComment()">Submit</button>
+    <br><br>
+
+    <br>
+    <h1>Fetch comment hash</h1>
+    <br><label for="fetchUrlHash">URL Hash:</label><input type="text" id="fetchUrlHash" maxlength="20" minlength="20"></input>
+    <br><br><button id="fetchComments" onclick="fetchComments()">Fetch Comments</button>
+    <br><br>
+
+    <span id="status"></span>
+</body>
+</html>
